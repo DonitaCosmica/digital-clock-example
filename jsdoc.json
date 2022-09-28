@@ -1,0 +1,19 @@
+{
+    "plugins": ["jsdoc-http-plugin"],
+    "source": {
+        "include": ["public"],
+        "includePattern": ".js$",
+        "excludePattern": "(node_modules|doc)"
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "opts": {
+        "recurse": "true",
+        "destination": "./doc",
+        "template": "node_modules/docdash",
+        "tutorials": "./tutorials",
+        "readme": "./README.md"
+    }
+}
