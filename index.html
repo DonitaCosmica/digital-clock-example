@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="time">
+        <div class="circle" style="--circ:#ff2972">
+            <div class="dots secDot"></div>
+            <svg>
+                <circle cx="120" cy="120" r="120" id="ss"></circle>
+            </svg>
+        </div>
+        <div class="circle" style="--circ:#fee800">
+            <div class="dots minDot"></div>
+            <svg>
+                <circle cx="100" cy="100" r="100" id="mm"></circle>
+            </svg>
+        </div>
+        <div class="circle" style="--circ:#04fc43">
+            <div class="dots hrDot"></div>
+            <svg>
+                <circle cx="80" cy="80" r="80" id="hh"></circle>
+            </svg>
+        </div>
+        <div class="timeBox">
+            <div id="hours" style="--c:#04fc43">00</div>
+            <div id="minutes" style="--c:#fee800">00</div>
+            <div id="seconds" style="--c:#ff2972">00</div>
+            <div class="horario" style="--c:#fff">
+                <div id="dia-noche"></div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
